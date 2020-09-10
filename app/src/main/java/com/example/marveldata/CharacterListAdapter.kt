@@ -22,6 +22,9 @@ class CharacterListAdapter : RecyclerView.Adapter<CustomViewHolder>() {
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
         val charName = charList.characters.get(position).name
         holder?.view?.textView_characterName?.text = charName.toString()
+        holder?.view.character_number.text =  position.toString()
+
+//        holder?.view.imageView.(charList.characters.get(position).thumbnail)
     }
 }
 
